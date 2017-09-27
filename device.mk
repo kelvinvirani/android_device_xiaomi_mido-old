@@ -124,6 +124,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     consumerir.msm8953
 
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-service
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -167,8 +171,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gps.msm8953 \
     libcurl \
-    libgnsspps \
-    libshims_get_process_name
+    libgnsspps
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
@@ -229,6 +232,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
+
+# Netutils
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
 
 # OMX
 PRODUCT_PACKAGES += \
