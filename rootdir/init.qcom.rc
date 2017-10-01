@@ -603,7 +603,6 @@ service fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-servi
     class late_start
     user system
     group system input
-    disabled
 
 service gx_fpd /system/bin/gx_fpd
      class core
